@@ -70,6 +70,7 @@ python3 testing/test_console.py            # :8100
 - [多用户与高并发设计](docs/scaling.md)：上线要解决的几个问题
 - [开发日志](docs/devlog/)
 - [Dify 编排导入说明](docs/dify-setup.md)：导入 chatflow.yml 后要手动配的四处
+- [批量测评工具说明](docs/testing.md)：三页流程、判分分层、测评集格式
 
 ## 说明
 
