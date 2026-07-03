@@ -38,6 +38,7 @@
 ## 目录
 
 ```
+dify/       Chatflow 编排导出（可直接导入 Dify 复现整个 agent）
 frontend/   聊天前端（原生 HTML/CSS/JS）
 server/     数据查询服务
 testing/    批量测评（网页控制台 + 命令行）
@@ -53,8 +54,8 @@ docs/       复盘、并发设计、开发日志
 pip install flask pandas openpyxl requests
 python3 server/bank_api.py                 # :8000
 
-# Dify：按架构搭好并发布，HTTP 节点填 http://host.docker.internal:8000
-#       （Dify 在 Docker 里，不能写 localhost）
+# Dify：导入 dify/chatflow.yml（详见 docs/dify-setup.md），
+#       配好模型/知识库后发布
 
 # 前端：frontend/app.js 填 DIFY_URL / DIFY_KEY，浏览器打开 index.html
 
@@ -68,6 +69,7 @@ python3 testing/test_console.py            # :8100
 - [项目迭代复盘](docs/retrospective.md)：五个版本一路怎么改过来的，每版为什么这么设计、踩了什么坑
 - [多用户与高并发设计](docs/scaling.md)：上线要解决的几个问题
 - [开发日志](docs/devlog/)
+- [Dify 编排导入说明](docs/dify-setup.md)：导入 chatflow.yml 后要手动配的四处
 
 ## 说明
 
