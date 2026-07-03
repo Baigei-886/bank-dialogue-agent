@@ -2,6 +2,10 @@
 
 `dify/chatflow.yml` 是完整的 Chatflow 导出文件，包含全部 30 个节点、连线、提示词和参数。导入后有四处要手动配，都是环境相关的，配完就能跑。
 
+导入后的画布长这样（意图分类 → 分流 → 核验/转账/咨询各走一条链 → 变量聚合 → 统一出口）：
+
+![Dify 工作流画布](images/dify-workflow.png)
+
 ## 导入
 
 Dify 工作室 → 创建应用 → 导入 DSL → 选择 `dify/chatflow.yml`。
