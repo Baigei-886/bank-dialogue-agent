@@ -1,0 +1,20 @@
+# 系统 / 编辑器
+.DS_Store
+.Rhistory
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Excel 临时锁文件
+~$*.xlsx
+
+# 批量测试的运行产物
+*批量测试结果.xlsx
+测试_*.csv
+
+# 第三方源语料（不上传）
+data/corpus_sample.xlsx
